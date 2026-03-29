@@ -3,6 +3,8 @@
 type ButtonProps = {
   children: React.ReactNode;
   href?: string;
+  target?: React.HTMLAttributeAnchorTarget;
+  rel?: string;
   variant?: "primary" | "secondary";
   className?: string;
   onClick?: () => void;
@@ -22,6 +24,8 @@ const variants = {
 export function Button({
   children,
   href,
+  target,
+  rel,
   variant = "primary",
   className = "",
   onClick,
@@ -31,7 +35,7 @@ export function Button({
 
   if (href) {
     return (
-      <a href={href} className={classNames}>
+      <a href={href} target={target} rel={rel} className={classNames}>
         {children}
       </a>
     );

@@ -10,6 +10,8 @@ export function Footer() {
         <div className="flex flex-wrap items-center gap-4">
           <a
             href={repositoryUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="transition hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
           >
             GitHub репозиторий

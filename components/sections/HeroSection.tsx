@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+﻿import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
@@ -24,7 +24,7 @@ export function HeroSection() {
 
             <div className="mt-9 flex flex-wrap gap-3">
               <Button href="#timeline">Посмотреть процесс</Button>
-              <Button href={repositoryUrl} variant="secondary">
+              <Button href={repositoryUrl} target="_blank" rel="noopener noreferrer" variant="secondary">
                 Репозиторий
               </Button>
             </div>
