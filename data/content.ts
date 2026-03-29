@@ -72,7 +72,7 @@ export const deploySteps = [
   "git pull",
   "npm install",
   "npm run build",
-  "pm2 restart landing",
+  "sudo systemctl restart landing.service",
   "done",
 ] as const;
 
