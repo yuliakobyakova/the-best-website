@@ -8,7 +8,7 @@
 - TypeScript
 - Tailwind CSS
 
-## Локальный запуск
+## Локальный запуск 
 
 ```bash
 npm install
