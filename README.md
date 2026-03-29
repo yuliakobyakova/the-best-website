@@ -178,9 +178,3 @@ sudo journalctl -u landing.service -n 100 --no-pager
 sudo nginx -t
 sudo systemctl reload nginx
 ```
-
-## Что можно улучшить дальше
-
-- Добавить проверку линтинга/тестов в CI до шага деплоя
-- Добавить health-check после перезапуска сервиса
-- Добавить staging-окружение перед production
