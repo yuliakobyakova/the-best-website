@@ -1,4 +1,5 @@
-﻿import { Container } from "@/components/ui/Container";
+import { Container } from "@/components/ui/Container";
+import { repositoryUrl } from "@/data/content";
 
 export function Footer() {
   return (
@@ -8,16 +9,10 @@ export function Footer() {
 
         <div className="flex flex-wrap items-center gap-4">
           <a
-            href="https://github.com/your-name/your-repo"
+            href={repositoryUrl}
             className="transition hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
           >
             GitHub репозиторий
-          </a>
-          <a
-            href="https://your-domain.example"
-            className="transition hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
-          >
-            Рабочий сайт
           </a>
         </div>
       </Container>
