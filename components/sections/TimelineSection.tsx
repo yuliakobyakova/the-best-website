@@ -17,14 +17,14 @@ export function TimelineSection() {
 
           {timeline.map((item) => (
             <Reveal key={item.step}>
-              <article className="group relative rounded-xl2 border border-line bg-panel p-5 shadow-soft transition duration-300 hover:shadow-hover sm:pl-14">
-                <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-blue-50 text-sm font-semibold text-blue-700 ring-1 ring-blue-100 sm:absolute sm:left-[0.25rem]">
-                    {item.step}
+              <article className="group relative rounded-xl2 border border-line bg-panel p-5 shadow-soft transition duration-300 hover:shadow-hover">
+                <div className="grid grid-cols-[2.25rem_1fr] items-start gap-x-3 gap-y-2 sm:gap-x-4">
+                  <span className="row-span-2 grid h-9 w-9 shrink-0 self-center place-items-center rounded-full bg-blue-50 text-sm font-semibold leading-none text-blue-700 ring-1 ring-blue-100">
+                    <span className="translate-y-[0.5px]">{item.step}</span>
                   </span>
                   <h3 className="text-lg font-semibold text-foreground group-hover:text-blue-700">{item.title}</h3>
+                  <p className="text-sm leading-7 text-muted sm:text-base">{item.text}</p>
                 </div>
-                <p className="mt-2 text-sm leading-7 text-muted sm:text-base">{item.text}</p>
               </article>
             </Reveal>
           ))}
