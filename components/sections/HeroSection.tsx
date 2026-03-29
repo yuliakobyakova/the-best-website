@@ -1,7 +1,8 @@
-﻿import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
+import { repositoryUrl } from "@/data/content";
 
 export function HeroSection() {
   return (
@@ -23,7 +24,7 @@ export function HeroSection() {
 
             <div className="mt-9 flex flex-wrap gap-3">
               <Button href="#timeline">Посмотреть процесс</Button>
-              <Button href="https://github.com/your-name/your-repo" variant="secondary">
+              <Button href={repositoryUrl} variant="secondary">
                 Репозиторий
               </Button>
             </div>

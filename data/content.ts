@@ -1,4 +1,4 @@
-﻿export type ApproachItem = {
+export type ApproachItem = {
   title: string;
   text: string;
 };
@@ -13,6 +13,8 @@ export type TimelineItem = {
   title: string;
   text: string;
 };
+
+export const repositoryUrl = "https://github.com/yuliakobyakova/the-best-website";
 
 export const taskPoints = [
   "разработка с нуля",
